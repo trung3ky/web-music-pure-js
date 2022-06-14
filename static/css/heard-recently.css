@@ -1,0 +1,158 @@
+
+/* now playing */
+
+.now-playing{
+    width: var(--width-now-playing);
+    background-color: var(--bg-secondary);
+    border-left: solid 1px var(--bd-primary);
+    padding: 0 calc(var(--sp-1) * 2);
+}
+
+.header__recently{
+    flex: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__title{
+    color: var(--c-primary);
+    font-size: var(--fs-secondary);
+    font-weight: 400;
+    background-color: var(--bg-sub-primary);
+    border-radius: 20px;
+    padding: 6px var(--sp-3);
+    cursor: pointer;
+    transition: all .2s linear;
+}
+
+.icon-more{
+    color: var(--c-primary);
+}
+
+.header__title:hover{
+    opacity: .9;
+}
+.header__title span{
+    display: inline-block;
+    transform: translateY(-1px);
+}
+
+
+/* lisst */
+
+.song-recently{
+    margin: var(--sp-3) 0;
+}
+
+.recently__list{
+}
+
+.recently__item{
+    list-style: none;
+    padding: calc(var(--sp-1) * 2);
+    border-radius: 3px;
+}
+
+.recently__item~.recently__item{
+    margin-top: var(--sp-2);
+}
+
+.recently__item a{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: var(--c-primary);
+}
+
+/* image */
+.item__image{
+    position: relative;
+    height: 40px;
+    min-width: 40px;
+    margin-right: var(--sp-2);
+}
+
+.image__opacity{
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+.image__bg{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: var(--bg-secondary);
+    opacity: 0.6
+}
+.image__opacity i{
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+}
+/* info */
+
+.item__info{
+    height: 40px;
+    flex: 1;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-right: var(--sp-3);
+}
+
+.info__name{
+    display: block;
+    color: var(--c-primary);
+    font-size: 14px;
+    font-weight: 700;
+    transition: all .15s linear;
+}
+
+.info__name:hover{
+    color: var(--bg-primary);
+}
+.info__singer{
+    display: block;
+    color: var(--c-sencondary);
+    font-size: 12px;
+    font-weight: 400;
+}
+
+/* icon */
+.item__icons{
+    display: flex;
+    font-size: var(--fs-3);
+    color: var(--c-sencondary);
+}
+
+.nav-wrapper-sm{
+    display: none;
+    height: 26px;
+    width: 26px;
+    background-color: transparent;
+}
+
+/* item hover */
+.nav-wrapper-sm:hover{
+    background-color: var(--bg-sub-primary);
+}
+
+.recently__item:hover{
+    background-color: var(--bg-tertiary-darker);
+}
+
+.recently__item:hover .image__opacity{
+    display: block;
+}
+.recently__item:hover .nav-wrapper-sm{
+    display: flex;
+    z-index: 111;
+}

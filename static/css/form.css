@@ -1,0 +1,118 @@
+
+/* add form */
+
+.add-song{
+    padding: 0 var(--sp-7);
+    color: var(--c-primary);
+    width: 100%;
+}
+
+form{
+    padding: 0 var(--sp-3);
+    display: flex;
+    flex-direction: column;
+}
+
+.add-song__title{
+    margin: var(--sp-5) 0;
+}
+
+.input__wrapper{
+    display: flex;
+    align-items: center;
+}
+
+.input__wrapper label{
+    font-size: var(--fs-primary);
+    max-width: 120px;
+    width: 100%;
+
+    font-weight: 700;
+}
+
+.label-textarea{
+    align-self: flex-start;
+    margin-top: calc(var(--sp-1) * 2);
+}
+.input__wrapper input{
+    height: 35px;
+    max-width: 300px;
+    width:  100%;
+
+    border-radius: 3px;
+    outline: none;
+    border: none;
+    padding: 0 var(--sp-2);
+}
+
+.input__wrapper textarea{
+    max-width: 300px;
+    width: 100%;
+    max-height: 250px;
+    min-height: 150px;
+    height: 100%;
+
+    border-radius: 3px;
+    padding: var(--sp-2);
+    outline: none;
+    border: none;
+}
+
+.input__wrapper input[type=file]{
+    padding: 0;
+    line-height: 35px;
+}
+
+.input__wrapper ~ .input__wrapper{
+    margin-top: var(--sp-3);
+}
+
+
+.error{
+    display: none;
+    padding: 0 var(--sp-3);
+    color: red;
+}
+
+.active .error{
+    display: block;
+}
+
+.active input, .active textarea{
+    border: solid 1px red;
+}
+
+.active input[type=file]{
+    border: none;
+}
+
+.submit{
+    /* float: right; */
+    max-width: 420px;
+    justify-self: center;
+    margin-top: var(--sp-4);
+    
+    padding: var(--sp-2) var(--sp-4);
+    font-size: var(--fs-primary);
+    border-radius: 3px;
+
+    border: none;
+    outline: none;
+    cursor: pointer;
+    transition: all .2s linear;
+    background-color: var(--bg-primary);
+    color: var(--c-primary);
+}
+.submit:hover{
+    opacity: .8;
+}
+
+.submit.active{
+    cursor: alias;
+}
+
+.submit.active:hover{
+    opacity: 1;
+}
+
+

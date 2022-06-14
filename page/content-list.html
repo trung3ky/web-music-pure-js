@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../static/css/base.css">
+    <link rel="stylesheet" href="../static/css/header.css">
+    <link rel="stylesheet" href="../static/css/sidbar.css">
+    <link rel="stylesheet" href="../static/css/heard-recently.css">
+    <link rel="stylesheet" href="../static/css/form.css">
+    <link rel="stylesheet" href="../static/css/content-list.css">
+    <title>Play list</title>
+<body>
+    <!-- app -->
+    <div class="loader">
+        <div class="thumb__loader"></div>
+    </div>
+    <div class="app">
+        <header>
+            <!-- logo -->
+            <div class="header__image">
+                <img class="image__logo" src="../static/media/logo.png" alt="">
+            </div>
+            <!-- end logo -->
+    
+            <!-- header right -->
+            <div class="header__right">
+                <!-- search -->
+                <div class="header__search">
+                    <i class="fas fa-search icon--search"></i>
+                    <input class="header__input" type="text" placeholder="Nhập tên bài hát, nghệ sĩ hoặc MV...">
+                </div>
+                <!-- end search -->
+    
+                <!-- menu -->
+                <nav>
+                    <ul class="menu">
+                        <li class="menu__item">
+                            <a href="../index.html">Home</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="#">PlayList</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="./content/demo-content.html">Bài hát</a>
+                        </li>
+                    </ul>
+                </nav>
+                <!-- end menu -->
+    
+                <!-- menu icon -->
+                <div class="header__nav">
+                    <div class="nav__upload nav-wrapper">
+                        <i class="fas fa-upload nav__icon"></i>
+                    </div>
+                    <div class="nav__setting nav-wrapper">
+                        <i class="fas fa-cog nav__icon"></i>
+                    </div>
+                    <div class="nav__user nav-wrapper">
+                        <img src="../static/media/user.jpg" alt="">
+                    </div>
+                </div>
+                <!-- menu icon -->
+            </div>
+            <!-- end header right -->
+        </header>
+    
+        <!-- container sidebar and a song -->
+        <div class="container">
+            <!-- sidebar -->
+            <div class="sidebar">
+                <ul class="sidebar__list">
+                    <li class="sidebar__item">
+                        <i class="far fa-play-circle"></i>
+                        <span class="">Cá nhân</span>
+                    </li>
+                    <li class="sidebar__item">
+                        <i class="far fa-dot-circle"></i>
+                        <span class="">Khám phá</span>
+                    </li>
+                    <li class="sidebar__item">
+                        <i class="fas fa-music"></i>
+                        <span class="">Nhạc mới</span>
+                    </li>
+                    <li class="sidebar__item">
+                        <i class="fas fa-th-large"></i>
+                        <span class="">Thể loại</span>
+                    </li>
+                    <li class="sidebar__item">
+                        <i class="far fa-star"></i>
+                        <span class="">Top 100</span>
+                    </li>
+                </ul>
+            </div>
+            <!-- end sidebar -->
+            <!-- list songs -->
+            <div class="music">
+                <!-- banner -->
+                <div class="music__banner">
+                    <div class="bg__banner"></div>
+                </div>
+                <!-- end banner -->
+                <!-- container list songs  -->
+                <div class="music__list"></div>
+
+                
+                <!-- start add form -->
+                <div class="add-song">
+                    <form>
+                        <h2 class="add-song__title">Thêm bài hát</h2>
+                        <div class="input__wrapper" >
+                            <label class="overflow">Tên bài hát</label>
+                            <input type="text" placeholder="Nhap ten bai hat">
+                            <span class="error overflow">Vui lòng nhập trường này!</span>
+                        </div>
+                        <div class="input__wrapper" >
+                            <label class="overflow">Tên ca sĩ</label>
+                            <input type="text" placeholder="Nhap ten ca si">
+                            <span class="error overflow">Vui lòng nhập trường này!</span>
+                        </div>
+                        <div class="input__wrapper" >
+                            <label class="overflow">Ảnh bài hát</label>
+                            <input type="file">
+                            <span class="error overflow">Vui lòng nhập trường này!</span>
+                        </div>
+                        <input class="submit" type="submit" value="Thêm">
+                    </form>
+                </div>
+                <!-- end add form -->
+
+            </div>
+            <!-- end list songs -->
+
+
+        </div>
+        <!-- end container sidebar and a song -->
+
+    </div>
+    <!-- end app -->
+    
+    <!-- section recently -->
+    <div class="now-playing">
+        <!-- header recently -->
+        <header>
+            <div class="header__recently">
+                <div class="header__title">
+                   <span>Nghe gần đây</span> 
+                </div>
+                <div class="nav-wrapper">
+                    <i class="fas fa-ellipsis-h icon-more"></i>
+                </div>
+            </div>
+        </header>
+        <!-- end header recently -->
+        <!-- list song recently -->
+        <ul class="recently__list">
+            <!-- item song -->
+            <li class="recently__item">
+                <a href="#">
+                    <!-- image song recently -->
+                    <div class="item__image">
+                        <img src="https://avatar-ex-swe.nixcdn.com/song/2021/04/29/9/1/f/8/1619691182261.jpg" alt="">
+                        <!-- background opacity -->
+                        <div class="image__opacity">
+                            <div class="image__bg"></div>
+                            <i class="fas fa-play"></i>
+                        </div>
+                        <!-- end background opacity -->
+                    </div>
+                    <!-- end image recently -->
+                    <!-- info of song recently -->
+                    <div class="item__info">
+                        <span class="info__name overflow">Muộn rồi mà sao còn</span>
+                        <span class="info__singer overflow">Sơn tùng MTP</span>
+                    </div>
+                    <!-- end info of song recently -->
+                    <!-- icon -->
+                    <div class="item__icons">
+                        <div class="nav-wrapper nav-wrapper-sm">
+                            <i class="far fa-heart"></i>
+                        </div>
+                        <div class="nav-wrapper nav-wrapper-sm">
+                            <i class="fas fa-ellipsis-h icon-more"></i>
+                        </div>
+                    </div>
+                    <!-- end icon -->
+                </a>
+            </li>
+            <!-- end item song -->
+            <li class="recently__item">
+                <a href="#">
+                    <div class="item__image">
+                        <img src="https://avatar-ex-swe.nixcdn.com/song/2021/04/29/9/1/f/8/1619691182261.jpg" alt="">
+                        <div class="image__opacity">
+                            <div class="image__bg"></div>
+                            <i class="fas fa-play"></i>
+                        </div>
+                    </div>
+                    <div class="item__info">
+                        <span class="info__name overflow">Muộn rồi mà sao còn</span>
+                        <span class="info__singer overflow">Sơn tùng MTP</span>
+                    </div>
+                    <div class="item__icons">
+                        <div class="nav-wrapper nav-wrapper-sm">
+                            <i class="far fa-heart"></i>
+                        </div>
+                        <div class="nav-wrapper nav-wrapper-sm">
+                            <i class="fas fa-ellipsis-h icon-more"></i>
+                        </div>
+                    </div>
+                </a>
+            </li>
+            <li class="recently__item">
+                <a href="#">
+                    <div class="item__image">
+                        <img src="https://avatar-ex-swe.nixcdn.com/song/2021/04/29/9/1/f/8/1619691182261.jpg" alt="">
+                        <div class="image__opacity">
+                            <div class="image__bg"></div>
+                            <i class="fas fa-play"></i>
+                        </div>
+                    </div>
+                    <div class="item__info">
+                        <span class="info__name overflow">Muộn rồi mà sao còn</span>
+                        <span class="info__singer overflow">Sơn tùng MTP</span>
+                    </div>
+                    <div class="item__icons">
+                        <div class="nav-wrapper nav-wrapper-sm">
+                            <i class="far fa-heart"></i>
+                        </div>
+                        <div class="nav-wrapper nav-wrapper-sm">
+                            <i class="fas fa-ellipsis-h icon-more"></i>
+                        </div>
+                    </div>
+                </a>
+            </li>
+        </ul>
+        <!-- end list song recently -->
+    </div>
+    <!-- end recently -->
+
+
+    <!-- modal -->
+    <div class="modal">
+        <div class="modal__bg"></div>
+        <div class="modal__container">
+            
+        </div>
+    </div>
+
+   <script type="module" src="../static/js/content-list.js"></script>
+</body>
+</html>

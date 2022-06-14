@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+    <link rel="stylesheet" href="./static/css/base.css">
+    <link rel="stylesheet" href="./static/css/header.css">
+    <link rel="stylesheet" href="./static/css/index.css">
+    <title>Introduction page</title>
+</head>
+<body>
+    <!-- header -->
+    <header>
+        <div class="header__image">
+            <img class="image__logo" src="./static/media/logo.png" alt="">
+        </div>
+        <div class="header__right">
+            <div class="header__search">
+                <i class="fas fa-search icon--search"></i>
+                <input class="header__input" type="text" placeholder="Nhập tên bài hát, nghệ sĩ hoặc MV...">
+            </div>
+
+            <nav>
+                <ul class="menu">
+                    <li class="menu__item">
+                        <a href="#">Home</a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="./page/content-list.html">PlayList</a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="./page/content/demo-content.html">Bài hát</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <div class="header__nav">
+                <div class="nav__upload nav-wrapper">
+                    <i class="fas fa-upload nav__icon"></i>
+                </div>
+                <div class="nav__setting nav-wrapper">
+                    <i class="fas fa-cog nav__icon"></i>
+                </div>
+                <div class="nav__user nav-wrapper">
+                    <img src="./static/media/user.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section>
+        <div class="slider">
+            <div class="slider__líst">
+                <div class="slider-item fade">
+                    <img src="./static/media/slide/slide1.jpg" alt="">
+                    <div class="slider__bg"></div>
+                    <div class="slider__content">
+                        <img src="./static/media/slide/text-slide1.png" alt="">
+                        <div class="content__title">Available Now</div>
+                        <div class="content__text">
+                            <p>Lorem ipsum dolor sit amet, cu sea suavitat intellegam, civibus nominati ad usu</p>
+                        </div>
+                        <button class="btn content__btn">PURCHASE</button>
+                    </div>
+                </div>
+                <div class="slider-item fade">
+                    <img src="./static/media/slide/slide2.png" alt="">
+                    <div class="slider__bg"></div>
+                    <div class="slider__content">
+                        <img src="./static/media/slide/text-slide2.png" alt="">
+                        <div class="content__title">Available Now</div>
+                        <div class="content__text">
+                            <p>Lorem ipsum dolor sit amet, cu sea suavitat intellegam, civibus nominati ad usu</p>
+                        </div>
+                        <button class="btn content__btn">PURCHASE</button>
+                    </div>
+                </div>
+                <div class="slider-item fade">
+                    <img src="./static/media/slide/slide3.png" alt="">
+                    <div class="slider__bg"></div>
+                    <div class="slider__content">
+                        <img src="./static/media/slide/text-slide3.png" alt="">
+                        <div class="content__title">Available Now</div>
+                        <div class="content__text">
+                            <p>Lorem ipsum dolor sit amet, cu sea suavitat intellegam, civibus nominati ad usu</p>
+                        </div>
+                        <button class="btn content__btn">PURCHASE</button>
+                    </div>
+                </div>
+            </div>
+            <i class="fas fa-chevron-left icon icon--left" onclick="clickBtn(-1)"></i>
+            <i class="fas fa-chevron-right icon icon--right" onclick=clickBtn(1)></i>
+        </div>
+        <div class="dots__list">
+            <span class="dot__item" onclick="currentSlider(0)"></span>
+            <span class="dot__item" onclick="currentSlider(1)"></span>
+            <span class="dot__item" onclick="currentSlider(2)"></span>
+        </div>
+    </section>
+
+
+    <script src="./static/js/slider.js"></script>
+</body>
+</html>

@@ -1,0 +1,140 @@
+
+header{
+
+    position: relative;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+
+    background-color: var(--bg-secondary);
+    height: var(--height-header);
+}
+
+
+/* start logo */
+.header__image{
+    width: var(--width-sidebar);
+    padding-left: var(--sp-5)
+}
+
+.image__logo{
+    height: var(--height-logo);
+    width: var(--width-logo);
+}
+/* end logo */
+
+
+/* start search */
+.header__right{
+    padding: 0 var(--sp-5);
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header__search{
+    border-radius: 20px;
+    background-color: var(--bg-tertiary-lighter);
+    height: var(--height-search);
+    max-width: var(--max-width-search);
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 var(--sp-3);
+}
+
+.header__input{
+    flex: 1;
+    outline: none;
+    border: none;
+    color: var(--c-primary);
+    margin-left: var(--sp-3);
+    
+    font-size: var(--fs-primary);
+    background-color: transparent;
+}
+.header__input::placeholder{
+    color: var(--c-primary);
+}
+
+.icon--search{
+    color: var(--c-primary);
+    font-size: var(--fs-primary)
+}
+/* end search */
+
+/* start menu */
+.menu{
+    display: flex;
+    list-style: none;
+    padding: 0 var(--sp-3);
+}
+
+.menu__item{
+    font-size: var(--fs-primary);
+    font-weight: 700;
+    cursor: pointer;
+}
+
+
+.menu__item a{
+    max-width: 70px;
+    text-decoration: none;
+    color: var(--c-primary);
+    transition: all .2s linear;
+    width: 100%;
+    display: block;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.menu__item a:hover{
+    color: var(--bg-primary);
+}
+
+.menu__item a{
+    margin-left: var(--sp-6);
+}
+
+.menu__item a:empty{
+    margin-left: 0;
+}
+
+/* end menu */
+
+
+/* start menu icon */
+.header__nav{
+    display: flex;
+}
+
+.nav-wrapper{
+    height: 40px;
+    width: 40px;
+    background-color: var(--bg-tertiary-lighter);
+    border-radius: 50%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    cursor: pointer;
+    transition: all .2s ease-in-out;
+}
+
+.nav-wrapper:hover{
+    opacity: 0.8;
+}
+.nav-wrapper~ .nav-wrapper{
+    margin-left: 10px;
+}
+
+.nav__icon{
+    color: var(--c-primary);
+}
+/* end menu icon */
+/* end header */
