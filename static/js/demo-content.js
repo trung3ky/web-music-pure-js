@@ -11,7 +11,7 @@ console.log(location.hash)
 
 // id is null assgin default id = 1
 if(id ===  null){
-    window.location = "http://127.0.0.1:5500/page/content/demo-content.html?id=1"
+    window.location = "./demo-content.html?id=1"
 }
 
 
